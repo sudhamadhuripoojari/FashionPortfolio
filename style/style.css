@@ -52,7 +52,7 @@ body {
 
   height: 100px;
   display: flex;
-   flex-direction: row;
+  flex-direction: row;
 }
 .logo img {
   width: 100px;
