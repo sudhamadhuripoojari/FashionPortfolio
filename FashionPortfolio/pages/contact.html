@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/style.css"/>
+    <link rel="font-face" href= "/font/Poppins/Poppins-Light.ttf">
+    <link rel="font-face" href= "/font/Poppins/Poppins-Regular.ttf"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+   <title>Contact</title>
+</head>
+<!--NavBar-->
+<navbar id="navbar">
+  <div class="logo">
+    <img src="http://localhost:8888/wordpress/wp-content/uploads/2021/10/logo.jpg" alt="logo" />
+  </div>
+  <div class="navLinks">
+    <a href="./index.html"> Home </a>
+    <a href="./about.html"> About </a>
+    <a href="./gallery.html"> Gallery </a>
+    <a href="./contact.html"> Contact </a>
+  </div>
+</navbar>
+   <body>
+    <div class="contact">
+        <div style="text-align:center">
+            <h2 >Contact Us</h2>
+            <p style="font: size 16px;color: black">Book an appointment, or leave us a message:</p>
+          </div>
+          <div class="row"> 
+              <div class="column">
+                  <img src="http://localhost:8888/wordpress/wp-content/uploads/2021/10/map.jpg" style="width:100%;height:auto">
+              </div>
+              <div class="column">
+                <div id="error" style="color: red"></div>
+                <form  id="myForm" action="destination.html" onsubmit="return validateForm()" method="GET"> 
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text" name="firstName" placeholder="Your First Name"  >
+                    <label for="lastName"> Last Name</label>
+                    <input id="lastName" type="text" name="lastName" placeholder="Your last Name">
+                    <label for="phoneNumber"> Mobile Number </label>
+                    <input id="phoneNumber" type="text" name="phoneNumber" maxlength="10" placeholder="Enter Mobile Number">
+                    <label for="country"> Country</label>
+                    <select id="country" name="country">
+                      <option value="india">India</option>
+                      <option value="sweden">Sweden</option>
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                    <label for="message"> Enquiry</label>
+                    <textarea id="message" name="message" placeholder="Message" style="height:100px"></textarea>
+                      <input type="submit" value="Submit">
+                </form>
+              </div>
+          </div>
+    </div>
+<!--footer Section-->
+<footer class="footer">
+    <div class="footerContainer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">Lehenga</a></li>
+            <li><a href="#">saree</a></li>
+            <li><a href="#">Gown</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+ <script src="../javaScript/formVal.js"></script>
+</body>
+</html>
