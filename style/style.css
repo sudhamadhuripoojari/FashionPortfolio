@@ -26,7 +26,7 @@ body {
 }
 /*Home Section*/
 .container {
-  background-image: url(http://localhost:8888/wordpress/wp-content/uploads/2021/10/coverpic.jpg);
+  background-image: url(../images/coverpic.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
